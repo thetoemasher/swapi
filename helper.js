@@ -19,7 +19,8 @@ function sort(array, sortItem) {
     if(!sortItem) {
         return array.sort();
     } else {
-        return array.sort((a, b) => a[sortItem] < b.sortItem ? 1 : -1)
+        return array.sort((a, b) => a[sortItem] > b[sortItem] ? 1 : -1)
     }
 }
 module.exports = {makeSwapiAPICall, sort};
+    
